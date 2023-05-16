@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: antiquewhite;
 }
 
@@ -18,7 +20,7 @@ p {
   text-align: center;
 }
 
-.container-parent {
+.container-welcome {
   display: flex;
   place-content: center;
 }
@@ -31,19 +33,29 @@ p {
   margin: 1rem;
 }
 
+.container-parent {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-cover {
+  max-width: 50rem;
+  max-height: 50rem;
+}
+
 .img-cat {
   width: 13rem;
   height: 15rem;
 }
 
-.container-mid {
-  width: 70%;
+.container-game {
+  width: 100vw;
   margin-top: 5rem;
-  display: grid;
+  display: flex;
   place-items: center;
-}
-
-.img-logo {
-  align-self: center;
-  width: 30rem;
+  background-color: #ffb900;
 }
