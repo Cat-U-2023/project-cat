@@ -36,6 +36,12 @@ p {
   text-align: center;
 }
 
+.horizontal {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+
 .container-welcome {
   display: flex;
   place-content: center;
@@ -69,18 +75,23 @@ p {
 }
 
 .container-game {
-  width: 100%;
-  display: flex;
-  place-items: center;
   background-color: #ffb900;
+  color: black;
 }
 
 .container-clean {
-  width: 100%;
-  display: flex;
-  place-items: center;
   color: white;
   background-color: #010101;
+}
+
+.container-feed {
+  color: black;
+  background: rgb(212 148 213);
+}
+
+.container-entertainment {
+  color: white;
+  background-color: rgb(33 98 66);
 }
 
 .container-text {
