@@ -12,8 +12,9 @@ body {
   background-repeat: no-repeat;
 }
 
-#web-content {
-  /* que quede el contenido de eñ nav hacia la derecha pero bien colocado */
+.nav-bar {
+  display: flex;
+  justify-content: center;
 }
 
 nav {
