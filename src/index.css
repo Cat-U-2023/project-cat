@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url("../public/images/fondo-cat-u-2560x1440.jpg");
+  background-image: url("../public/img/fondo-cat-u-2560x1440.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -66,7 +66,6 @@ a:hover {
 
 #home {
   height: 100%;
-  background-color: antiquewhite;
 }
 
 h1 {
