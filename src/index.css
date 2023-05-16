@@ -38,6 +38,7 @@ nav ul {
 }
 
 nav li {
+  padding: 20px;
   width: auto;
   color: white;
   list-style-type: none;
