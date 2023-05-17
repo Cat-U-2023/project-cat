@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
 * {
   font-family: "Montserrat Alternates", sans-serif;
   margin: 0;
@@ -17,6 +20,21 @@ body {
   background: url("../public/img/Fondo-Cat-U-Gato-8006x3200.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background Image Pattern with opacity without impact in the rest */
+body::after {
+  content: "";
+  background-image: url("/img/mouse-pattern.png");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .nav-bar {
@@ -117,25 +135,43 @@ a:visited {
   height: auto;
 }
 
-.img-cat {
-  width: 20vw;
-}
-
 .container-right {
   width: 100%;
   height: auto;
   padding-top: 10vh;
+  
+h1 {
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+p {
+  /* font-family: "DotGothic16", Arial, Helvetica, sans-serif; */
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 0.9rem;
 }
 
 .logo {
   width: 25vw;
 }
 
-.img-logo {
+.img-logo-home {
   width: 20vw;
   height: auto;
   margin: 1vw;
   margin-left: 6vw;
+  
+.horizontal {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+
+.container-welcome {
+  display: flex;
+  place-content: center;
 }
 
 .info {
@@ -159,4 +195,65 @@ a:visited {
   font-size: 1.2vw;
   font-weight: bolder;
   text-shadow: 5px 2px 3px #3b3b3b99;
+  margin: 1rem;
+}
+
+.container-parent {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-cover {
+  width: 100%;
+  max-height: 50rem;
+}
+
+.img-cat {
+  width: 10rem;
+  height: 13rem;
+}
+
+.container-game {
+  background-color: #ffb900;
+  color: black;
+}
+
+.container-clean {
+  color: white;
+  background-color: #010101;
+}
+
+.container-feed {
+  color: black;
+  background: rgb(212 148 213);
+}
+
+.container-entertainment {
+  color: white;
+  background-color: rgb(33 98 66);
+}
+
+.container-text {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.etc {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.img-ellipsis {
+  width: 100px;
+  height: 20px;
 }
