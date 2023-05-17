@@ -127,19 +127,6 @@ a:visited {
   padding-top: 10vh;
 }
 
-h1 {
-  font-family: "Press Start 2P", "Courier New", Courier, monospace;
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-
-p {
-  /* font-family: "DotGothic16", Arial, Helvetica, sans-serif; */
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5rem;
-  margin: 0.9rem;
-}
-
 .logo {
   width: 25vw;
 }
