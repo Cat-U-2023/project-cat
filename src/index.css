@@ -52,7 +52,7 @@ nav a {
 .container-home {
   width: 100vw;
   height: 100vh;
-  background-image: url("/public/img/Fondo-Cat-U-8006x3200.svg");
+  background-image: url("");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -74,6 +74,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   font-size: 25px;
 }
 
@@ -98,7 +99,9 @@ a:visited {
 }
 
 #home {
-  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
