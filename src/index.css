@@ -230,12 +230,12 @@ p {
 
 .container-feed {
   color: black;
-  background: rgb(212 148 213);
+  background: #ff77a5;
 }
 
 .container-entertainment {
   color: white;
-  background-color: rgb(33 98 66);
+  background-color: #3cc867;
 }
 
 .container-text {
