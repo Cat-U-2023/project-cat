@@ -12,6 +12,10 @@ body {
   min-height: 100vh;
 }
 
+.center {
+  text-align: center;
+}
+
 .container-home {
   position: relative;
   max-width: 100%;
