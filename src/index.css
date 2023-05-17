@@ -52,7 +52,7 @@ nav a {
 .container-home {
   width: 100vw;
   height: 100vh;
-  background-image: url("public/img/Fondo-Cat-U-8006x3200.svg");
+  background-image: url("/public/img/Fondo-Cat-U-8006x3200.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
