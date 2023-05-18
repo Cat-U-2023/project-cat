@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +12,19 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.line-height-m {
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Evitar que el usuario pueda copiar texto. Por ejemplo, botones */
+a,
+button,
+img,
+.prevent-select {
+  user-select: none; /* Standard syntax */
 }
 
 .horizontal {
@@ -18,13 +35,10 @@ body {
 
 .container-home {
   position: relative;
-  max-width: 100%;
-  height: 100vh;
-  margin: 0 auto;
+  height: 50rem;
   background-image: url("../public/img/Fondo-Cat-U-Gato-8006x3200.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0;
 }
 
 .nav-bar {
@@ -56,16 +70,15 @@ nav a {
 }
 
 #home {
-  width: 100%;
-  height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  margin-top: 6rem;
 }
 
 button {
   margin: 10px;
   color: #fff;
-  padding: 15px;
+  padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 20px;
@@ -82,11 +95,15 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+button:active {
+  transform: scale(1.1);
 }
 
 a:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 a:link {
@@ -97,6 +114,7 @@ a:link {
 a:active {
   text-decoration: none;
   color: white;
+  transform: scale(1.1);
 }
 
 a:visited {
@@ -104,63 +122,40 @@ a:visited {
   color: white;
 }
 
-.container-left {
-  width: 100%;
-  height: auto;
-}
-
 .container-right {
-  width: 100%;
   height: auto;
-  padding-top: 10vh;
+  width: 50%;
+  margin-right: 8%;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
 }
 
 h1 {
   font-family: "Press Start 2P", "Courier New", Courier, monospace;
   font-size: 2rem;
-  margin: 0.5rem;
+  margin: 0;
 }
 
 p {
-  /* font-family: "DotGothic16", Arial, Helvetica, sans-serif; */
   font-family: Helvetica, sans-serif;
   font-size: 1.5rem;
-  margin: 0.9rem;
-}
-
-.logo {
-  width: 25rem;
+  margin: 0;
 }
 
 .img-logo-home {
   width: 20rem;
-  height: auto;
-  margin: 1rem;
-  margin-left: 6rem;
 }
 
 .info {
   color: #fff;
-  width: 75%;
-  height: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.play {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  height: auto;
-  margin-top: 1rem;
-  margin-left: 6rem;
-}
-
-.info p {
-  font-size: 1.2rem;
+  text-align: left;
+  width: 70%;
+  font-size: 1.5rem;
   font-weight: bolder;
   text-shadow: 5px 2px 3px #3b3b3b99;
-  margin: 1rem;
 }
 
 .container-parent {
@@ -207,6 +202,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: left;
+  gap: 1rem;
 }
 
 .etc {
