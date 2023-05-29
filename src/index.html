@@ -7,7 +7,6 @@
   <meta name="description" content="Tamagotchi's style cat game developed by CAT-U.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAT - U</title>
-  <link rel="preload" href="./home.css" />
   <link rel="stylesheet" href="./index.css" />
   <script type="module" src="./index.js"></script>
 </head>
@@ -18,11 +17,13 @@
       <img class="background-home" src="img/Fondo-Cat-U-Gato.webp" alt="">
       <div class="nav-bar">
         <nav>
-          <a href="#home">Inicio</a>
-          <a href="#games">Minijuegos</a>
-          <a href="#clean">Límpiame</a>
-          <a href="#feed">Aliméntame</a>
-          <a href="#entertainment">Entreténme</a>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#games">Minijuegos</a></li>
+            <li><a href="#clean">Límpiame</a></li>
+            <li><a href="#feed">Aliméntame</a></li>
+            <li><a href="#entertainment">Entreténme</a></li>
+          </ul>
         </nav>
       </div>
       <div class="container-intro">
@@ -108,7 +109,7 @@
     <!--SECTION 2 Work In Progress Entertainment-->
     <div class="container-parent">
       <div id="entertainment" class="container-entertainment horizontal">
-        <img class="img-cover" src="/img/cover-entertaiment.webp" alt="Food">
+        <img class="img-cover" src="img/cover-entertaiment.webp" alt="Food">
         <div class="container-text">
           <h1 class="text-center line-height-m">¡ENTRETÉNME, KAREN! </h1>
           <p>¿Quién dijo que los mininos no necesitan su dosis de diversión? </p>

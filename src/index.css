@@ -57,9 +57,7 @@ img,
 }
 
 nav {
-  display: flex;
   margin: 30px;
-  padding: 20px;
   background: linear-gradient(
     90deg,
     rgb(255 174 60) 0%,
@@ -74,10 +72,19 @@ nav {
   border-radius: 25px;
 }
 
-nav a {
-  padding: 1.3rem;
-  width: auto;
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul > li {
+  padding-right: 2rem;
   transition: 0.2s ease-in-out;
+  list-style: none;
+}
+
+a {
+  text-shadow: 2px 2px 1px #010101;
 }
 
 button {
@@ -95,7 +102,7 @@ button {
     rgb(255 0 151 / 100%) 100%
   );
   transition: 0.2s ease-in-out;
-  text-shadow: 5px 2px 3px #3b3b3b99;
+  text-shadow: 2px 2px 1px #010101;
 }
 
 button:hover {
@@ -107,7 +114,8 @@ button:active {
   transform: scale(1.1);
 }
 
-a:hover {
+ul > li:hover {
+  cursor: pointer;
   transform: scale(1.2);
 }
 
@@ -170,7 +178,7 @@ p {
   width: 70%;
   font-size: 1.5rem;
   font-weight: bolder;
-  text-shadow: 5px 2px 3px #3b3b3b99;
+  text-shadow: 2px 2px 1px #010101;
 }
 
 .container-parent {
@@ -213,11 +221,12 @@ p {
 }
 
 .container-gameplay {
-  color: black;
+  color: white;
   background-color: #926583;
   display: flex;
   flex-direction: column;
   place-items: center;
+  width: 100%;
 }
 
 .container-text {
@@ -226,6 +235,28 @@ p {
   flex-direction: column;
   text-align: left;
   gap: 1rem;
+}
+
+#gameplay h1 {
+  color: #000;
+  text-shadow: 1px 0 1px #d9d9d9;
+}
+
+#gameplay > .container-text {
+  text-shadow: 3px 2px 1px #000;
+  max-width: 60rem;
+}
+
+#games > .container-text {
+  text-shadow: 1px 0 1px #d9d9d9;
+}
+
+#feed > .container-text {
+  text-shadow: 1px 0 1px #d9d9d9;
+}
+
+#entertainment > .container-text {
+  text-shadow: 2px 2px 1px #010101;
 }
 
 video {
