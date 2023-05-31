@@ -46,42 +46,6 @@ img,
   z-index: -1;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  margin: 30px;
-  background: linear-gradient(
-    90deg,
-    rgb(255 174 60) 0%,
-    rgb(255 132 0 / 100%) 52%,
-    rgb(255 80 60 / 100%) 82%,
-    rgb(255 0 151 / 100%) 100%
-  );
-  font-family: "IBM Plex Sans Hebrew", "Montserrat Alternates", Helvetica,
-    sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  border-radius: 25px;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: center;
-}
-
-ul > li {
-  padding-right: 2rem;
-  transition: 0.2s ease-in-out;
-  list-style: none;
-}
-
-a {
-  text-shadow: 2px 2px 1px #010101;
-}
-
 button {
   margin: 10px;
   color: #fff;
@@ -98,6 +62,8 @@ button {
   );
   transition: 0.2s ease-in-out;
   text-shadow: 2px 2px 1px #010101;
+  box-shadow: 0 2px 1px #000;
+  border: none;
 }
 
 button:hover {
@@ -107,11 +73,6 @@ button:hover {
 
 button:active {
   transform: scale(1.1);
-}
-
-ul > li:hover {
-  cursor: pointer;
-  transform: scale(1.2);
 }
 
 a:link {
@@ -128,6 +89,48 @@ a:active {
 a:visited {
   text-decoration: none;
   color: white;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  left: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 14rem;
+  overflow: auto;
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 40%);
+  background: linear-gradient(
+    90deg,
+    rgb(255 174 60) 0%,
+    rgb(255 132 0 / 100%) 52%,
+    rgb(255 128 60) 82%,
+    rgb(255 89 0) 100%
+  );
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  text-shadow: 2px 2px 1px #000000c6;
+  font-size: 1.5rem;
+  font-family: "Montserrat Alternates", monospace, sans-serif;
+}
+
+.dropdown-content a:hover {
+  color: #fff;
+  background-color: #00a4bd;
 }
 
 .container-intro {
@@ -269,7 +272,7 @@ video {
 }
 
 footer {
-  background-color: #4a4348;
+  background-color: #fff;
 }
 
 #about-us {
@@ -314,4 +317,17 @@ footer {
 
 img {
   width: 3rem;
+}
+
+.copyright {
+  height: 6rem;
+  background-color: #343434;
+  color: white;
+  font-family: "Montserrat Alternates", monospace;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 1rem;
+  padding: 1rem;
 }
