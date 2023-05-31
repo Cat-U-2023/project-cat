@@ -276,3 +276,7 @@ video {
   width: 100px;
   height: 20px;
 }
+
+video {
+  margin-bottom: 2rem;
+}
