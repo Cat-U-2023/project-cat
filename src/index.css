@@ -261,6 +261,7 @@ p {
 
 video {
   width: 80rem;
+  margin-bottom: 2rem;
 }
 
 .etc {
@@ -277,6 +278,10 @@ video {
   height: 20px;
 }
 
-video {
-  margin-bottom: 2rem;
+.back-to-top {
+  width: 12rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  margin-left: 70%;
 }
