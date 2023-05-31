@@ -12,11 +12,6 @@ body {
   padding: 0;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .text-center {
   text-align: center;
 }
@@ -139,14 +134,14 @@ a:visited {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-height: 100%;
   display: flex;
   justify-content: center;
 }
 
 .container-right {
-  height: auto;
-  width: 50%;
-  margin-top: 3%;
+  max-width: 50%;
+  padding-top: 3%;
   margin-left: 16%;
   display: flex;
   place-items: center;
@@ -174,8 +169,7 @@ p {
 
 .info {
   color: #fff;
-  text-align: left;
-  width: 70%;
+  max-width: 70%;
   font-size: 1.5rem;
   font-weight: bolder;
   text-shadow: 2px 2px 1px #010101;
