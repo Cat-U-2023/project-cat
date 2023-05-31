@@ -46,13 +46,11 @@ img,
   min-height: 799px;
 }
 
-.background-home {
+.container-bg {
   width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-color: #926583;
+  background-image: url("img/Fondo-Cat-U-Gato.webp");
+  background-repeat: no-repeat;
 }
 
 button {
@@ -140,27 +138,33 @@ a:visited {
 
 .dropdown-content a:hover {
   color: #fff;
-  background-color: #00a4bd;
+  background-color: #bd00b4;
 }
 
 .container-intro {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-height: 100%;
+  min-height: 799px;
   display: flex;
   justify-content: center;
 }
 
 .container-right {
-  max-width: 50%;
-  padding-top: 3%;
+  max-width: 40%;
+  width: 30%;
+  height: 20rem;
+  padding: 1rem;
+  margin-top: 5rem;
   margin-left: 16%;
   display: flex;
   place-items: center;
   flex-direction: column;
   gap: 2rem;
   text-align: center;
+  background-color: #92658354;
+  border-radius: 10px;
+  box-shadow: 6px 2px 10px #0008;
 }
 
 h1 {
@@ -177,15 +181,20 @@ p {
 }
 
 .img-logo-home {
-  width: 30%;
+  width: 40%;
 }
 
 .info {
   color: #fff;
-  max-width: 70%;
+  max-width: 90%;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: bolder;
   text-shadow: 2px 2px 1px #010101;
+}
+
+.play {
+  margin-top: 2rem;
 }
 
 .container-parent {
@@ -274,9 +283,15 @@ p {
   text-shadow: 2px 2px 1px #010101;
 }
 
+.video-info {
+  display: flex;
+  justify-content: center;
+}
+
 video {
-  width: 80rem;
+  width: 60%;
   margin-bottom: 2rem;
+  border-radius: 5px;
 }
 
 .back-to-top {
@@ -291,10 +306,6 @@ video {
 
 .back-to-top img {
   width: 2.8rem;
-}
-
-footer {
-  background-color: #f00;
 }
 
 #about-us {
@@ -325,10 +336,7 @@ footer {
 
 .info-team > h3 {
   font-weight: 600;
-}
-
-.info-team > h4 {
-  font-weight: 400;
+  font-size: 1.6rem;
 }
 
 .icons {
