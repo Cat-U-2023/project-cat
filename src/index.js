@@ -14,15 +14,16 @@
 // });
 
 const intro = document.querySelector(".container-intro");
+const button = document.createElement("button");
+button.classList.add("back-to-top");
+button.innerHTML = `<a href="#home">
+  <img lazy src="img/Back-Top.png" alt="two arrow icons heading up">
+</a>`;
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > 500) {
-    intro.innerHTML = `<button class="back-to-top">
-    <a href="#home">
-      <img lazy src="img/Back-Top.png" alt="two arrow icons heading up">
-    </a>
-  </button>`;
     $(".back-to-top").fadeIn();
+    intro.appendChild(button);
   } else {
     $(".back-to-top").fadeOut();
   }
