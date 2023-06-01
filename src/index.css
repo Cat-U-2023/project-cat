@@ -48,7 +48,7 @@ img,
 
 .container-bg {
   width: 100%;
-  background-color: #926583;
+  background-color: #9c718d;
   background-image: url("img/Fondo-Cat-U-Gato.webp");
   background-repeat: no-repeat;
 }
@@ -245,7 +245,7 @@ p {
 
 .container-gameplay {
   color: white;
-  background-color: #926583;
+  background-color: #9c718d;
   display: flex;
   flex-direction: column;
   place-items: center;
