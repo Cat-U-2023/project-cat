@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 html,
@@ -323,9 +324,14 @@ video {
   font-family: "Montserrat Alternates", monospace;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .about-us-img {
-  width: 200px;
-  height: 200px;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
   box-shadow: 0 5px 5px black;
 }
@@ -354,8 +360,12 @@ video {
   transform: scale(1.3);
 }
 
+footer {
+  width: 100%;
+}
+
 .copyright {
-  height: 6rem;
+  width: 100%;
   background-color: #343434;
   color: white;
   font-family: "Montserrat Alternates", monospace;
@@ -365,4 +375,45 @@ video {
 .copyright p {
   font-size: 1rem;
   padding: 1rem;
+}
+
+@media (width < 400px) {
+  html {
+    font-size: 10px;
+  }
+
+  .back-to-top {
+    width: 3.5rem;
+    height: 3.5rem;
+    right: 10px;
+  }
+
+  .back-to-top img {
+    width: 1rem;
+  }
+
+  #about-us {
+    background-color: #bd00b4;
+  }
+
+  .content-card-team {
+    background-color: #3cc867;
+    gap: 1rem;
+  }
+
+  .cards-team {
+    max-width: 100%;
+    height: 500px;
+    gap: 100px;
+    background-color: aquamarine;
+  }
+
+  .info-team {
+    background-color: #ffb900;
+  }
+
+  .info-team > h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
 }
