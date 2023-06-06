@@ -11,6 +11,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .text-center {
@@ -310,7 +311,7 @@ video {
 }
 
 #about-us {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .content-card-team {
@@ -318,7 +319,6 @@ video {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 500px;
   gap: 100px;
   margin-top: 80px;
   font-family: "Montserrat Alternates", monospace;
@@ -362,6 +362,8 @@ video {
 
 footer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .copyright {
@@ -392,28 +394,65 @@ footer {
     width: 1rem;
   }
 
-  #about-us {
-    background-color: #bd00b4;
-  }
-
   .content-card-team {
-    background-color: #3cc867;
     gap: 1rem;
+    margin-top: 20px;
   }
 
   .cards-team {
     max-width: 100%;
-    height: 500px;
+    height: 200px;
     gap: 100px;
-    background-color: aquamarine;
-  }
-
-  .info-team {
-    background-color: #ffb900;
   }
 
   .info-team > h3 {
     font-weight: 600;
     font-size: 1.6rem;
+  }
+
+  .container-game {
+    flex-flow: column wrap;
+  }
+
+  .container-clean {
+    flex-flow: column wrap;
+  }
+
+  .container-feed {
+    flex-flow: column wrap;
+  }
+
+  .container-entertainment {
+    flex-flow: column wrap;
+  }
+
+  .container-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-bg {
+    background-size: 400px;
+  }
+
+  .container-right {
+    max-width: 100%;
+    width: 100%;
+    height: 25rem;
+    padding: 0;
+    margin-top: 130px;
+    margin-left: 0%;
+    gap: 0.5rem;
+  }
+
+  .play {
+    margin-top: 0;
   }
 }
