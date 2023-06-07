@@ -151,7 +151,6 @@ a:visited {
 }
 
 .container-right {
-  max-width: 40%;
   width: 30%;
   height: 20rem;
   padding: 1rem;
@@ -162,9 +161,6 @@ a:visited {
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-  background-color: #92658354;
-  border-radius: 10px;
-  box-shadow: 6px 2px 10px #0008;
 }
 
 h1 {
@@ -290,9 +286,9 @@ p {
 }
 
 video {
-  width: 60%;
+  width: 70%;
   margin-bottom: 2rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .back-to-top {
@@ -381,23 +377,28 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 730px) {
+@media (width <= 730px) {
   html {
     font-size: 10px;
   }
 
+  .img-logo-home {
+    width: 15%;
+  }
+
   .back-to-top {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
     right: 10px;
   }
 
   .back-to-top img {
-    width: 1rem;
+    width: 1.7rem;
   }
 
   .content-card-team {
     margin-top: 20px;
+    gap: 1rem;
   }
 
   .cards-team {
@@ -406,7 +407,7 @@ footer {
 
   .info-team > h3 {
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .container-game {
@@ -431,6 +432,80 @@ footer {
     flex-direction: column;
     text-align: center;
     margin: 2rem;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-bg {
+    background-size: 1200px;
+    width: 100%;
+    height: 70rem;
+  }
+
+  .container-right {
+    width: 100%;
+    height: 25rem;
+    padding: 0;
+    margin-top: 45rem;
+    margin-left: 0%;
+    gap: 0.5rem;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  video {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (730px <= width <= 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .back-to-top {
+    width: 6rem;
+    height: 6rem;
+    right: 10px;
+  }
+
+  .back-to-top img {
+    width: 2rem;
+  }
+
+  .content-card-team {
+    gap: 5rem;
+    margin-top: 20px;
+  }
+
+  .info-team > h3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
+  .container-game {
+    flex-flow: column wrap;
+  }
+
+  .container-clean {
+    flex-flow: column wrap;
+  }
+
+  .container-feed {
+    flex-flow: column wrap;
+  }
+
+  .container-entertainment {
+    flex-flow: column wrap;
   }
 
   .container-image {
@@ -439,72 +514,7 @@ footer {
 
   .container-bg {
     background-size: 100%;
-  }
-
-  .container-home {
-    max-height: 450px;
-  }
-
-  .container-right {
-    max-width: 100%;
-    width: 100%;
-    height: 25rem;
-    padding: 0;
-    margin-top: 130px;
-    margin-left: 0%;
-    gap: 0.5rem;
-  }
-
-  .play {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 1000px) {
-  html {
-    font-size: 10px;
-  }
-
-  .back-to-top {
-    width: 3.5rem;
-    height: 3.5rem;
-    right: 10px;
-  }
-
-  .back-to-top img {
-    width: 1rem;
-  }
-
-  .content-card-team {
-    gap: 2rem;
-    margin-top: 20px;
-  }
-
-  .cards-team {
-    max-width: 100%;
-    height: 200px;
-    gap: 100px;
-  }
-
-  .info-team > h3 {
-    font-weight: 600;
-    font-size: 1.6rem;
-  }
-
-  .container-game {
-    flex-flow: column wrap;
-  }
-
-  .container-clean {
-    flex-flow: column wrap;
-  }
-
-  .container-feed {
-    flex-flow: column wrap;
-  }
-
-  .container-entertainment {
-    flex-flow: column wrap;
+    height: 69.5vw;
   }
 
   .container-text {
@@ -515,43 +525,83 @@ footer {
     margin: 2rem;
   }
 
-  .container-image {
-    display: none;
-  }
-
-  .container-home {
-    height: 790px;
+  .img-logo-home {
+    width: 15%;
   }
 
   .container-right {
-    max-width: 100%;
     width: 100%;
-    height: 25rem;
+    height: 22rem;
     padding: 0;
-    margin-top: 130px;
+    margin-top: 36vw;
     margin-left: 0%;
     gap: 0.5rem;
   }
 
+  .info {
+    margin-bottom: 0;
+  }
+
   .play {
-    margin-top: 0;
+    margin: 0;
+  }
+
+  video {
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 
-@media (max-width: 1220px) {
+@media (1000px <= width < 1300px) {
+  #gameplay .container-text {
+    margin-top: 3rem;
+    width: 90%;
+  }
+
   .container-bg {
-    height: 500px;
+    background-size: 100%;
+    height: 78vw;
   }
 
   .content-card-team {
     gap: 2rem;
     margin-top: 20px;
   }
+
+  .img-logo-home {
+    width: 25%;
+  }
+
+  .container-right {
+    width: 100%;
+    height: 22rem;
+    padding: 0;
+    margin-top: 40vw;
+    margin-left: 0%;
+    gap: 0.5rem;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  video {
+    width: 80%;
+  }
 }
 
-@media (max-width: 1520px) {
+@media (1300px <= width <= 1600px) {
+  .info {
+    margin: 0;
+  }
+
+  .play {
+    margin: 0;
+  }
+
   .container-bg {
-    height: 600px;
+    background-size: 100%;
+    height: 620px;
   }
 
   #gameplay .container-text {
@@ -561,16 +611,124 @@ footer {
     text-align: center;
     margin: 2rem;
   }
-}
 
-@media (max-width: 1820px) {
-  .container-bg {
-    height: 800px;
+  .container-right {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  video {
+    width: 80%;
   }
 }
 
-@media (min-width: 1820px) {
+@media (1600px <= width <= 1820px) {
   .container-bg {
     height: 800px;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  .container-right {
+    width: 40%;
+    margin-top: 8rem;
+  }
+
+  video {
+    width: 80%;
+  }
+}
+
+@media (1820px <= width <= 2200px) {
+  .container-bg {
+    background-size: 100%;
+    height: 900px;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+
+  .dropdown-content {
+    width: 18rem;
+  }
+
+  .dropdown-content a {
+    font-size: 2rem;
+  }
+}
+
+@media (2200px <= width <= 3840px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .container-bg {
+    background-size: 100%;
+    height: 45vw;
+  }
+
+  .container-right {
+    margin-top: 9rem;
+  }
+
+  button {
+    font-size: 2.5rem;
+  }
+
+  .dropdown-content {
+    width: 22rem;
+  }
+
+  .dropdown-content a {
+    font-size: 2.5rem;
+  }
+
+  video {
+    width: 80%;
+  }
+}
+
+@media (width >= 3840px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 3rem;
+  }
+
+  .container-bg {
+    background-size: 100%;
+    height: 45vw;
+  }
+
+  .container-right {
+    margin-top: 9rem;
+  }
+
+  button {
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+  }
+
+  .dropdown-content {
+    margin-left: 4rem;
+    width: 35rem;
+  }
+
+  .dropdown-content a {
+    font-size: 4rem;
+  }
+
+  video {
+    width: 80%;
   }
 }
