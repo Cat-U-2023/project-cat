@@ -377,7 +377,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 100px) and (max-width: 730px) {
   html {
     font-size: 10px;
   }
