@@ -392,7 +392,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (width < 450px) {
+@media screen and (width < 360px) {
   body {
     background-color: #ffcd00;
     overflow: hidden;
@@ -440,9 +440,7 @@ footer {
   }
 }
 
-
-@media screen and (450px <= width <= 650px) {
-
+@media screen and (360px <= width <= 450px) {
   html {
     font-size: 9px;
   }
@@ -504,11 +502,115 @@ footer {
   }
 
   .container-video {
-    height: 47.5vw;
+    height: 90vw;
   }
 
   .container-bg {
-    height: 47.5vw;
+    height: 90vw;
+  }
+
+  .container-right {
+    width: 100%;
+    padding: 0;
+    margin-top: 35vw;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .info .text-center {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  .play button {
+    font-size: 1.3rem;
+  }
+
+  .bars-video {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .dropdown button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (450px <= width <= 650px) {
+  html {
+    font-size: 9px;
+  }
+
+  .img-logo-home {
+    width: 20%;
+  }
+
+  .back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    right: 10px;
+  }
+
+  .back-to-top img {
+    width: 1.7rem;
+  }
+
+  .content-card-team {
+    margin-top: 20px;
+    gap: 1rem;
+  }
+
+  .cards-team {
+    height: 200px;
+  }
+
+  .info-team > h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .container-game {
+    flex-flow: column wrap;
+  }
+
+  .container-clean {
+    flex-flow: column wrap;
+  }
+
+  .container-feed {
+    flex-flow: column wrap;
+  }
+
+  .container-entertainment {
+    flex-flow: column wrap;
+  }
+
+  .container-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-video {
+    height: 48vw;
+  }
+
+  .container-bg {
+    height: 48vw;
   }
 
   .container-right {
@@ -545,9 +647,7 @@ footer {
   }
 }
 
-
 @media screen and (650px <= width <= 1000px) {
-
   html {
     font-size: 12px;
   }
@@ -692,9 +792,7 @@ footer {
   }
 }
 
-
 @media screen and (1600px <= width <= 1820px) {
-
   .play {
     margin: 0;
   }
@@ -713,9 +811,7 @@ footer {
   }
 }
 
-
 @media screen and (1820px <= width <= 2200px) {
-
   button {
     font-size: 2rem;
   }
