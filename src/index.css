@@ -440,7 +440,9 @@ footer {
   }
 }
 
+
 @media screen and (450px <= width <= 650px) {
+
   html {
     font-size: 9px;
   }
@@ -543,7 +545,9 @@ footer {
   }
 }
 
+
 @media screen and (650px <= width <= 1000px) {
+
   html {
     font-size: 12px;
   }
@@ -623,7 +627,7 @@ footer {
   }
 }
 
-@media screen and (1000px <= width <= 1299px) {
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
   #gameplay .container-text {
     margin-top: 3rem;
     width: 90%;
@@ -661,7 +665,7 @@ footer {
   }
 }
 
-@media screen and (1300px <= width <= 1600px) {
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
   .info {
     margin: 0;
   }
@@ -688,7 +692,9 @@ footer {
   }
 }
 
+
 @media screen and (1600px <= width <= 1820px) {
+
   .play {
     margin: 0;
   }
@@ -707,7 +713,9 @@ footer {
   }
 }
 
+
 @media screen and (1820px <= width <= 2200px) {
+
   button {
     font-size: 2rem;
   }
@@ -725,7 +733,7 @@ footer {
   }
 }
 
-@media screen and (2200px <= width <= 3840px) {
+@media screen and (min-width: 2200px) and (max-width: 3840px) {
   h1 {
     font-size: 3rem;
   }
@@ -759,7 +767,7 @@ footer {
   }
 }
 
-@media screen and (width >= 3840px) {
+@media screen and (min-width: 3840px) {
   h1 {
     font-size: 5rem;
   }
