@@ -49,9 +49,19 @@ img,
 
 .container-bg {
   width: 100%;
+}
+
+.bg-video {
+  width: 100%;
+  position: absolute;
+}
+
+.container-video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 799px;
   background-color: #9c718d;
-  background-image: url("img/Fondo-Cat-U-Gato.webp");
-  background-repeat: no-repeat;
 }
 
 button {
@@ -285,7 +295,7 @@ p {
   justify-content: center;
 }
 
-video {
+.bars-video {
   width: 70%;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -438,12 +448,6 @@ footer {
     display: none;
   }
 
-  .container-bg {
-    background-size: 1200px;
-    width: 100%;
-    height: 70rem;
-  }
-
   .container-right {
     width: 100%;
     height: 25rem;
@@ -461,7 +465,7 @@ footer {
     margin: 0;
   }
 
-  video {
+  .bars-video {
     margin-bottom: 0;
     width: 100%;
   }
@@ -512,11 +516,6 @@ footer {
     display: none;
   }
 
-  .container-bg {
-    background-size: 100%;
-    height: 69.5vw;
-  }
-
   .container-text {
     width: 90%;
     display: flex;
@@ -546,7 +545,7 @@ footer {
     margin: 0;
   }
 
-  video {
+  .bars-video {
     margin-bottom: 0;
     width: 100%;
   }
@@ -556,6 +555,11 @@ footer {
   #gameplay .container-text {
     margin-top: 3rem;
     width: 90%;
+  }
+
+  .container-video {
+    background-size: 100%;
+    height: 78vw;
   }
 
   .container-bg {
@@ -585,7 +589,7 @@ footer {
     margin: 0;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
@@ -597,6 +601,11 @@ footer {
 
   .play {
     margin: 0;
+  }
+
+  .container-video {
+    background-size: 100%;
+    height: 620px;
   }
 
   .container-bg {
@@ -617,12 +626,16 @@ footer {
     margin-top: 1rem;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
 
 @media screen and (1600px <= width <= 1820px) {
+  .container-video {
+    height: 800px;
+  }
+
   .container-bg {
     height: 800px;
   }
@@ -636,12 +649,17 @@ footer {
     margin-top: 8rem;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
 
 @media screen and (1820px <= width <= 2200px) {
+  .container-video {
+    background-size: 100%;
+    height: 900px;
+  }
+
   .container-bg {
     background-size: 100%;
     height: 900px;
@@ -669,6 +687,11 @@ footer {
     font-size: 1.7rem;
   }
 
+  .container-video {
+    background-size: 100%;
+    height: 45vw;
+  }
+
   .container-bg {
     background-size: 100%;
     height: 45vw;
@@ -690,7 +713,7 @@ footer {
     font-size: 2.5rem;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
@@ -702,6 +725,11 @@ footer {
 
   p {
     font-size: 3rem;
+  }
+
+  .container-video {
+    background-size: 100%;
+    height: 45vw;
   }
 
   .container-bg {
@@ -728,7 +756,7 @@ footer {
     font-size: 4rem;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
