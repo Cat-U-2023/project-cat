@@ -14,6 +14,11 @@ body {
   overflow-x: hidden;
 }
 
+.alert {
+  position: absolute;
+  z-index: -999;
+}
+
 .text-center {
   text-align: center;
 }
@@ -49,9 +54,20 @@ img,
 
 .container-bg {
   width: 100%;
+  height: 45vw;
+}
+
+.bg-video {
+  width: 100%;
+  position: absolute;
+}
+
+.container-video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 45vw;
   background-color: #9c718d;
-  background-image: url("img/Fondo-Cat-U-Gato.webp");
-  background-repeat: no-repeat;
 }
 
 button {
@@ -151,11 +167,11 @@ a:visited {
 }
 
 .container-right {
-  width: 30%;
+  width: 40%;
   height: 20rem;
   padding: 1rem;
   margin-top: 5rem;
-  margin-left: 16%;
+  margin-left: 25%;
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -285,7 +301,7 @@ p {
   justify-content: center;
 }
 
-video {
+.bars-video {
   width: 70%;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -376,14 +392,63 @@ footer {
 }
 
 /* MEDIA QUERIES */
+@media screen and (width < 450px) {
+  body {
+    background-color: #ffcd00;
+    overflow: hidden;
+  }
 
-@media screen and (min-width: 100px) and (max-width: 730px) {
+  .container-page {
+    display: none;
+  }
+
+  .alert {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: "Montserrat alternates", sans-serif;
+    background-color: #ffcd00;
+    color: #000;
+    position: absolute;
+    z-index: 1000;
+    padding: 1rem;
+  }
+
+  .warning {
+    width: 80%;
+  }
+
+  .warning h1 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .warning p {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: "IBM Plex Mono", sans-serif;
+  }
+
+  .warning p:last-of-type {
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: end;
+    font-family: "Montserrat alternates", sans-serif;
+  }
+}
+
+
+@media screen and (450px <= width <= 650px) {
+
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .img-logo-home {
-    width: 15%;
+    width: 20%;
   }
 
   .back-to-top {
@@ -438,36 +503,51 @@ footer {
     display: none;
   }
 
+  .container-video {
+    height: 47.5vw;
+  }
+
   .container-bg {
-    background-size: 1200px;
-    width: 100%;
-    height: 70rem;
+    height: 47.5vw;
   }
 
   .container-right {
-    width: 100%;
-    height: 25rem;
+    width: 62%;
     padding: 0;
-    margin-top: 45rem;
-    margin-left: 0%;
-    gap: 0.5rem;
+    margin: 0;
+    margin-left: 35%;
+    gap: 0;
   }
 
   .info {
     margin-bottom: 0;
   }
 
+  .info .text-center {
+    font-size: 1.5rem;
+  }
+
   .play {
     margin: 0;
   }
 
-  video {
+  .play button {
+    font-size: 1.3rem;
+  }
+
+  .bars-video {
     margin-bottom: 0;
     width: 100%;
   }
+
+  .dropdown button {
+    margin-top: 0;
+  }
 }
 
-@media screen and (min-width: 730px) and (max-width: 1000px) {
+
+@media screen and (650px <= width <= 1000px) {
+
   html {
     font-size: 12px;
   }
@@ -512,11 +592,6 @@ footer {
     display: none;
   }
 
-  .container-bg {
-    background-size: 100%;
-    height: 69.5vw;
-  }
-
   .container-text {
     width: 90%;
     display: flex;
@@ -526,15 +601,15 @@ footer {
   }
 
   .img-logo-home {
-    width: 15%;
+    width: 20%;
   }
 
   .container-right {
-    width: 100%;
-    height: 22rem;
+    width: 62%;
     padding: 0;
-    margin-top: 36vw;
-    margin-left: 0%;
+    margin: 0;
+    margin-top: 0.7rem;
+    margin-left: 35%;
     gap: 0.5rem;
   }
 
@@ -546,7 +621,7 @@ footer {
     margin: 0;
   }
 
-  video {
+  .bars-video {
     margin-bottom: 0;
     width: 100%;
   }
@@ -558,34 +633,34 @@ footer {
     width: 90%;
   }
 
-  .container-bg {
-    background-size: 100%;
-    height: 78vw;
-  }
-
   .content-card-team {
     gap: 2rem;
     margin-top: 20px;
   }
 
   .img-logo-home {
-    width: 25%;
+    width: 30%;
   }
 
   .container-right {
-    width: 100%;
-    height: 22rem;
+    width: 62%;
     padding: 0;
-    margin-top: 40vw;
-    margin-left: 0%;
+    margin: 0;
+    margin-top: 0.7rem;
+    margin-left: 35%;
     gap: 0.5rem;
+  }
+
+  .info {
+    margin-bottom: 0;
   }
 
   .play {
     margin: 0;
+    padding: 0;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
@@ -597,11 +672,6 @@ footer {
 
   .play {
     margin: 0;
-  }
-
-  .container-bg {
-    background-size: 100%;
-    height: 620px;
   }
 
   #gameplay .container-text {
@@ -617,15 +687,13 @@ footer {
     margin-top: 1rem;
   }
 
-  video {
+  .bars-video {
     width: 80%;
   }
 }
 
-@media screen and (min-width: 1600px) and (max-width: 1820px) {
-  .container-bg {
-    height: 800px;
-  }
+
+@media screen and (1600px <= width <= 1820px) {
 
   .play {
     margin: 0;
@@ -636,16 +704,17 @@ footer {
     margin-top: 8rem;
   }
 
-  video {
+  #gameplay .container-text {
+    width: 90%;
+  }
+
+  .bars-video {
     width: 80%;
   }
 }
 
-@media screen and (min-width: 1820px) and (max-width: 2200px) {
-  .container-bg {
-    background-size: 100%;
-    height: 900px;
-  }
+
+@media screen and (1820px <= width <= 2200px) {
 
   button {
     font-size: 2rem;
@@ -653,6 +722,10 @@ footer {
 
   .dropdown-content {
     width: 18rem;
+  }
+
+  #gameplay .container-text {
+    width: 90%;
   }
 
   .dropdown-content a {
@@ -667,11 +740,6 @@ footer {
 
   p {
     font-size: 1.7rem;
-  }
-
-  .container-bg {
-    background-size: 100%;
-    height: 45vw;
   }
 
   .container-right {
@@ -690,7 +758,11 @@ footer {
     font-size: 2.5rem;
   }
 
-  video {
+  #gameplay .container-text {
+    width: 90%;
+  }
+
+  .bars-video {
     width: 80%;
   }
 }
@@ -702,11 +774,6 @@ footer {
 
   p {
     font-size: 3rem;
-  }
-
-  .container-bg {
-    background-size: 100%;
-    height: 45vw;
   }
 
   .container-right {
@@ -728,7 +795,11 @@ footer {
     font-size: 4rem;
   }
 
-  video {
+  #gameplay .container-text {
+    width: 90%;
+  }
+
+  .bars-video {
     width: 80%;
   }
 }
