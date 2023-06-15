@@ -308,8 +308,8 @@ p {
 }
 
 .back-to-top {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   position: fixed;
   bottom: 50px;
@@ -318,7 +318,7 @@ p {
 }
 
 .back-to-top img {
-  width: 2.8rem;
+  width: 1.5rem;
 }
 
 #about-us {
