@@ -308,8 +308,8 @@ p {
 }
 
 .back-to-top {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   position: fixed;
   bottom: 50px;
@@ -318,7 +318,7 @@ p {
 }
 
 .back-to-top img {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 #about-us {
@@ -326,13 +326,21 @@ p {
 }
 
 .content-card-team {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   width: 100%;
-  gap: 100px;
   margin-top: 80px;
   font-family: "Montserrat Alternates", monospace;
+}
+
+.upper-cards {
+  display: grid;
+  grid-template-columns: 0.2fr 0.2fr;
+  justify-content: space-evenly;
+}
+
+.lower-cards {
+  display: grid;
+  grid-template-columns: 0.25fr 0.2fr 0.25fr;
+  justify-content: space-evenly;
 }
 
 .img-container {
@@ -341,8 +349,8 @@ p {
 }
 
 .about-us-img {
-  width: 14vw;
-  height: 14vw;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   box-shadow: 0 5px 5px black;
 }
@@ -354,7 +362,7 @@ p {
 
 .info-team > h3 {
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .icons {
@@ -364,7 +372,7 @@ p {
 }
 
 .icons img {
-  width: 4rem;
+  width: 3.5rem;
   transition: 0.5s ease;
 }
 
@@ -376,7 +384,7 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .copyright {
@@ -388,7 +396,7 @@ footer {
 }
 
 .copyright p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 1rem;
 }
 
