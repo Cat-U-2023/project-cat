@@ -680,8 +680,8 @@ footer {
   }
 
   .container-right {
-    width: 50%;
-    margin-top: 1rem;
+    margin-top: -2rem;
+    width: 40rem;
   }
 
   .bars-video {
@@ -695,8 +695,8 @@ footer {
   }
 
   .container-right {
-    width: 40%;
-    margin-top: 8rem;
+    margin-top: 2rem;
+    width: 48rem;
   }
 
   #gameplay .container-text {
@@ -709,6 +709,11 @@ footer {
 }
 
 @media screen and (1820px <= width <= 2200px) {
+  .container-right {
+    margin-top: 3rem;
+    width: 50rem;
+  }
+
   button {
     font-size: 2rem;
   }
@@ -728,15 +733,17 @@ footer {
 
 @media screen and (min-width: 2200px) and (max-width: 3840px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    padding: 1rem;
   }
 
   p {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 
   .container-right {
-    margin-top: 9rem;
+    margin-top: 4rem;
+    width: 65rem;
   }
 
   button {
@@ -762,15 +769,21 @@ footer {
 
 @media screen and (min-width: 3840px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    padding: 4.5rem;
   }
 
   p {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .container-right {
-    margin-top: 9rem;
+    margin-top: 30rem;
+    width: 110rem;
+  }
+
+  .img-logo-home {
+    width: 50rem;
   }
 
   button {
@@ -789,10 +802,23 @@ footer {
   }
 
   #gameplay .container-text {
-    width: 90%;
+    max-width: 110rem;
+  }
+
+  .back-to-top {
+    width: 10rem;
+    height: 10rem;
+    right: 10px;
+    margin-right: 4rem;
+  }
+
+  .back-to-top img {
+    margin-top: 1rem;
+    width: 3.8rem;
   }
 
   .bars-video {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 15rem;
   }
 }
