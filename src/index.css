@@ -341,19 +341,20 @@ p {
 }
 
 .about-us-img {
-  width: 15vw;
-  height: 15vw;
+  width: 14vw;
+  height: 14vw;
   border-radius: 50%;
   box-shadow: 0 5px 5px black;
 }
 
 .info-team {
+  margin-bottom: 5rem;
   text-align: center;
 }
 
 .info-team > h3 {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 .icons {
@@ -363,7 +364,7 @@ p {
 }
 
 .icons img {
-  width: 3rem;
+  width: 4rem;
   transition: 0.5s ease;
 }
 
@@ -440,9 +441,7 @@ footer {
   }
 }
 
-
 @media screen and (450px <= width <= 650px) {
-
   html {
     font-size: 9px;
   }
@@ -545,9 +544,7 @@ footer {
   }
 }
 
-
 @media screen and (650px <= width <= 1000px) {
-
   html {
     font-size: 12px;
   }
@@ -692,9 +689,7 @@ footer {
   }
 }
 
-
 @media screen and (1600px <= width <= 1820px) {
-
   .play {
     margin: 0;
   }
@@ -713,9 +708,7 @@ footer {
   }
 }
 
-
 @media screen and (1820px <= width <= 2200px) {
-
   button {
     font-size: 2rem;
   }
