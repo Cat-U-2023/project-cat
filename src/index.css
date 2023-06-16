@@ -401,7 +401,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (width < 450px) {
+@media screen and (width < 280px) {
   body {
     background-color: #ffcd00;
     overflow: hidden;
@@ -427,12 +427,14 @@ footer {
   }
 
   .warning {
-    width: 80%;
+    width: 90%;
   }
 
   .warning h1 {
+    width: 100%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
   }
 
   .warning p {
@@ -449,9 +451,9 @@ footer {
   }
 }
 
-@media screen and (450px <= width <= 650px) {
+@media screen and (280px <= width <= 330px) {
   html {
-    font-size: 9px;
+    font-size: 5px;
   }
 
   .img-logo-home {
@@ -552,9 +554,215 @@ footer {
   }
 }
 
-@media screen and (650px <= width <= 1000px) {
+@media screen and (330px <= width <= 450px) {
   html {
-    font-size: 12px;
+    font-size: 6px;
+  }
+
+  .img-logo-home {
+    width: 20%;
+  }
+
+  .back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    right: 10px;
+  }
+
+  .back-to-top img {
+    width: 1.7rem;
+  }
+
+  .content-card-team {
+    margin-top: 20px;
+    gap: 1rem;
+  }
+
+  .cards-team {
+    height: 200px;
+  }
+
+  .info-team > h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .container-game {
+    flex-flow: column wrap;
+  }
+
+  .container-clean {
+    flex-flow: column wrap;
+  }
+
+  .container-feed {
+    flex-flow: column wrap;
+  }
+
+  .container-entertainment {
+    flex-flow: column wrap;
+  }
+
+  .container-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-video {
+    height: 47.5vw;
+  }
+
+  .container-bg {
+    height: 47.5vw;
+  }
+
+  .container-right {
+    width: 62%;
+    padding: 0;
+    margin: 0;
+    margin-left: 35%;
+    gap: 0;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .info .text-center {
+    font-size: 1.5rem;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  .play button {
+    font-size: 1.3rem;
+  }
+
+  .bars-video {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .dropdown button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (450px < width <= 650px) {
+  html {
+    font-size: 7px;
+  }
+
+  .img-logo-home {
+    width: 20%;
+  }
+
+  .back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    right: 10px;
+  }
+
+  .back-to-top img {
+    width: 1.7rem;
+  }
+
+  .content-card-team {
+    margin-top: 20px;
+    gap: 1rem;
+  }
+
+  .cards-team {
+    height: 200px;
+  }
+
+  .info-team > h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .container-game {
+    flex-flow: column wrap;
+  }
+
+  .container-clean {
+    flex-flow: column wrap;
+  }
+
+  .container-feed {
+    flex-flow: column wrap;
+  }
+
+  .container-entertainment {
+    flex-flow: column wrap;
+  }
+
+  .container-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .container-image {
+    display: none;
+  }
+
+  .container-video {
+    height: 47.5vw;
+  }
+
+  .container-bg {
+    height: 47.5vw;
+  }
+
+  .container-right {
+    width: 62%;
+    padding: 0;
+    margin-top: 4%;
+    margin-left: 35%;
+    gap: 0;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .info .text-center {
+    font-size: 1.5rem;
+  }
+
+  .play {
+    margin: 0;
+  }
+
+  .play button {
+    font-size: 1.3rem;
+  }
+
+  .bars-video {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .dropdown button {
+    margin-top: 0;
+  }
+}
+
+@media screen and (650px < width <= 1000px) {
+  html {
+    font-size: 11px;
   }
 
   .back-to-top {
