@@ -3,7 +3,7 @@ const intro = document.querySelector(".container-intro");
 const button = document.createElement("button");
 button.classList.add("back-to-top");
 button.innerHTML = `<a href="#home">
-  <img lazy src="img/Back-Top.png" alt="two arrow icons heading up">
+  <img lazy src="img/Back-Top.webp" alt="two arrow icons heading up">
 </a>`;
 
 $(window).scroll(function () {

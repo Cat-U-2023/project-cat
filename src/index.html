@@ -5,20 +5,42 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Tamagotchi's style cat game developed by CAT-U.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAT - U</title>
   <link rel="stylesheet" href="./index.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="module" src="./index.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script defer type="module" src="./index.js"></script>
 </head>
 
 <body>
+  <div class="alert">
+    <div class="warning">
+      <h1>UPS... PARECE QUE ALGO HA IDO MAL</h1>
+      <br />
+      <p>
+        LAMENTAMOS COMUNICARLE QUE CAT-U NO PUEDE VISUALIZARSE
+        CORRECTAMENTE EN ESTE DISPOSITIVO.
+      </p>
+      <p>
+        LE RECOMENDAMOS QUE PARA UNA MEJOR EXPERIENCIA PRUEBE A ROTAR SU
+        PANTALLA O ACCEDER DESDE UN DISPOSITIVO CON MAYORES DIMENSIONES
+        COMO UNA TABLET O UN ORDENADOR.
+      </p>
+      <br />
+      <p>- El Equipo de CAT-U.</p>
+    </div>
+  </div>
   <div class="container-page">
     <div class="container-parent container-home">
       <div id="home">
 
         <div class="container-bg">
-
+          <div class="container-video">
+            <video class="bg-video" autoplay loop muted playsinline>
+              <source src="videos/bg-animation-cat-u.webm">
+              <source src="videos/bg-animation-cat-u.mp4">
+            </video>
+          </div>
           <div class="dropdown">
             <button type="menu">Menú</button>
             <div class="dropdown-content">
@@ -56,19 +78,24 @@
       </div>
     </div>
     <!--SECTION 2 Work In Progress Gameplay-->
-    <div class="container-parent">
+    <div class=" container-parent">
       <div id="gameplay" class="container-gameplay">
         <div class="container-text">
           <h1 class="text-center line-height-m">¿CÓMO JUGAR?</h1>
-          <p class="text-center">Nuestro michi necesita tus cuidados. Fíjate en que sus barras de salud no se
+          <p class="text-center gameplay-text">Nuestro michi necesita tus cuidados. Fíjate en que sus barras de salud no
+            se
             agoten.
             Puedes ayudarle
-            haciendo click en su comedero para alimentarle, en la pelotita para jugar con él y en el arenero para
+            haciendo click en su comedero para alimentarle, en la pelotita para jugar con él y en el arenero
+            para
             limpiarlo.</p>
           <p class="text-center">¡Dale caña!</p>
         </div>
         <div class="video-info">
-          <video autoplay muted loop src="videos/statusbar-seccion.mp4"></video>
+          <video class="bars-video" autoplay muted loop playsinline>
+            <source src="videos/gameplay-cat-u.webm">
+            <source src="videos/gameplay-cat-u.mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -133,7 +160,8 @@
         <div class="container-text">
           <h1 class="text-center line-height-m">¡ENTRETÉNME, KAREN! </h1>
           <p>¿Quién dijo que los mininos no necesitan su dosis de diversión? </p>
-          <p>Tendrás que proporcionar a tu michi un montón de entretenimiento, desde juguetes hasta caricias.</p>
+          <p>Tendrás que proporcionar a tu michi un montón de entretenimiento, desde juguetes hasta caricias.
+          </p>
           <p>Recuerda: ¡un michi feliz es un michi sano!</p>
         </div>
       </div>
@@ -145,78 +173,136 @@
         <div id="about-us" class="container-about-us-horizontal">
           <h1 class="text-center line-height-m">Sobre el equipazo de Cat-U</h1>
           <div class="content-card-team">
-            <div class="cards-team">
-              <div class="img-container">
-                <img class="about-us-img" src="img/cv-image.jpg" alt="">
-              </div>
-              <div class="info-team">
-                <h3>David Álvarez</h3>
-                <div class="icons">
-                  <a target="_blank" href="https://www.linkedin.com/in/davidalvarezruiz/">
-                    <img src="img/linkedin.png" alt="icono linkedin">
-                  </a>
-                  <a target="_blank" href="https://github.com/DaveAlvarezr">
-                    <img src="img/github-icon.png" alt="icono github">
-                  </a>
+            <div class="upper-cards">
+              <div class="cards-team">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="img-container">
+                      <img class="about-us-img" src="img/isabel.webp" alt="Fotografía Isabel">
+                    </div>
+                    <div class="img-container-back">
+                      <img class="about-us-img" src="img/Isa-Cat-U-Avatar.webp" alt="Fotografía Isabel de gato">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-team">
+                  <h2>Isabel González</h2>
+                  <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/isabel-gonzalez-matos">
+                      <img src="img/linkedin.webp" alt="icono linkedin">
+                    </a>
+                    <a target="_blank" href="https://github.com/isagzm">
+                      <img src="img/github-icon.webp" alt="icono github">
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="cards-team">
-              <div class="img-container">
-                <img class="about-us-img" src="img/Pablo-img-about-us.jpg" alt="">
-              </div>
-              <div class="info-team">
-                <h3>Pablo Santana</h3>
-                <div class="icons">
-                  <a target="_blank" href="https://www.linkedin.com/in/pablo-santana-ojeda/">
-                    <img src="img/linkedin.png" alt="icono linkedin">
-                  </a>
-                  <a target="_blank" href="https://github.com/DarkOwn3r">
-                    <img src="img/github-icon.png" alt="icono github">
-                  </a>
+              <div class="cards-team">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="img-container">
+                      <img class="about-us-img" src="img/cv-image.webp" alt="Fotografía David">
+                    </div>
+                    <div class="img-container-back">
+                      <img class="about-us-img" src="img/Dave-Cat-U-Avatar.webp" alt="Fotografía David de gato">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-team">
+                  <h2>David Álvarez</h2>
+                  <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/davidalvarezruiz/">
+                      <img src="img/linkedin.webp" alt="icono linkedin">
+                    </a>
+                    <a target="_blank" href="https://github.com/DaveAlvarezr">
+                      <img src="img/github-icon.webp" alt="icono github">
+                    </a>
+                  </div>
                 </div>
               </div>
+
             </div>
-            <div class="cards-team">
-              <div class="img-container">
-                <img class="about-us-img" src="img/IMG_4927.JPG" alt="">
-              </div>
-              <div class="info-team">
-                <h3>Isabel González</h3>
-                <div class="icons">
-                  <a target="_blank" href="https://www.linkedin.com/in/isabel-gonzalez-matos">
-                    <img src="img/linkedin.png" alt="icono linkedin">
-                  </a>
-                  <a target="_blank" href="https://github.com/isagzm">
-                    <img src="img/github-icon.png" alt="icono github">
-                  </a>
+            <div class="lower-cards">
+              <div class="cards-team">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="img-container">
+                      <img class="about-us-img" src="img/Fany-about-me.webp" alt="Fotografía Estefanía">
+                    </div>
+                    <div class="img-container-back">
+                      <img class="about-us-img" src="img/Fany-Cat-U-Avatar.webp" alt="Fotografía Fany de gato">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-team">
+                  <h2>Estefanía Martínez</h2>
+                  <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/estefaniamartínezhenríquez">
+                      <img src="img/linkedin.webp" alt="icono linkedin">
+                    </a>
+                    <a target="_blank" href="https://github.com/FANY1309">
+                      <img src="img/github-icon.webp" alt="icono github">
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="cards-team">
-              <div class="img-container">
-                <img class="about-us-img" src="img/Fany.png" alt="">
+              <div class="cards-team">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="img-container">
+                      <img class="about-us-img" src="img/Pablo-img-about-us.webp" alt="Fotografía Pablo">
+                    </div>
+                    <div class="img-container-back">
+                      <img class="about-us-img" src="img/Pablo-Cat-U-Avatar.webp" alt="Fotografía Pablo de gato">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-team">
+                  <h2>Pablo Santana</h2>
+                  <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/pablo-santana-ojeda/">
+                      <img src="img/linkedin.webp" alt="icono linkedin">
+                    </a>
+                    <a target="_blank" href="https://github.com/DarkOwn3r">
+                      <img src="img/github-icon.webp" alt="icono github">
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="info-team">
-                <h3>Estefanía Martínez</h3>
-                <div class="icons">
-                  <a target="_blank" href="https://www.linkedin.com/in/estefaniamartínezhenríquez">
-                    <img src="img/linkedin.png" alt="icono linkedin">
-                  </a>
-                  <a target="_blank" href="https://github.com/FANY1309">
-                    <img src="img/github-icon.png" alt="icono github">
-                  </a>
+              <div class="cards-team">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="img-container">
+                      <img class="about-us-img" src="img/Agus-about-me.webp" alt="Fotografía Agustina">
+                    </div>
+                    <div class="img-container-back">
+                      <img class="about-us-img" src="img/Agus-Cat-U-Avatar.webp" alt="Fotografía Agus de gato">
+                    </div>
+                  </div>
+                </div>
+                <div class="info-team">
+                  <h2>Agustina Casañas</h2>
+                  <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/nirwita/">
+                      <img src="img/linkedin.webp" alt="icono linkedin">
+                    </a>
+                    <a target="_blank" href="https://github.com/Nirwita">
+                      <img src="img/github-icon.webp" alt="icono github">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Contacta: contacto@catu.com </p>
-        <p>© Cat-U 2023 | Todos los derechos reservados. </p>
-      </div>
-    </footer>
+  </div>
+  </div>
+  <div class="copyright">
+    <p>Contacta: contacto@catu.com </p>
+    <p>© Cat-U 2023 | Todos los derechos reservados. </p>
+  </div>
+  </footer>
   </div>
 </body>
 
