@@ -67,7 +67,7 @@ img,
   z-index: -1;
   width: 100%;
   height: 45vw;
-  background-color: #9c718d;
+  background-color: #8c5e80;
 }
 
 button {
@@ -101,18 +101,18 @@ button:active {
 
 a:link {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 a:active {
   text-decoration: none;
-  color: white;
+  color: #fff;
   transform: scale(1.1);
 }
 
 a:visited {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
 .dropdown {
@@ -188,7 +188,7 @@ h1 {
 p {
   font-family: "Montserrat Alternates", Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -226,14 +226,14 @@ p {
 
 .container-game {
   background-color: #ffb900;
-  color: black;
+  color: #000;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
 }
 
 .container-clean {
-  color: white;
+  color: #fff;
   background-color: #010101;
   display: flex;
   justify-content: space-between;
@@ -241,7 +241,7 @@ p {
 }
 
 .container-feed {
-  color: black;
+  color: #000;
   background-color: #ff77a5;
   display: flex;
   justify-content: space-between;
@@ -249,7 +249,7 @@ p {
 }
 
 .container-entertainment {
-  color: white;
+  color: #000;
   background-color: #3cc867;
   display: flex;
   justify-content: space-between;
@@ -257,8 +257,8 @@ p {
 }
 
 .container-gameplay {
-  color: white;
-  background-color: #9c718d;
+  color: #fff;
+  background-color: #8c5e80;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -293,7 +293,7 @@ p {
 }
 
 #entertainment > .container-text {
-  text-shadow: 2px 2px 1px #010101;
+  text-shadow: 1px 0 1px #d9d9d9;
 }
 
 .video-info {
@@ -388,7 +388,7 @@ p {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  box-shadow: 0 5px 5px black;
+  box-shadow: 0 5px 5px #000;
 }
 
 .info-team {
@@ -396,7 +396,7 @@ p {
   text-align: center;
 }
 
-.info-team > h3 {
+.info-team > h2 {
   font-weight: 600;
   font-size: 2.2rem;
 }
@@ -413,6 +413,7 @@ p {
 }
 
 .icons a:hover > img {
+  cursor: pointer;
   transform: scale(1.3);
 }
 
@@ -426,7 +427,7 @@ footer {
 .copyright {
   width: 100%;
   background-color: #343434;
-  color: white;
+  color: #fff;
   font-family: "Montserrat Alternates", monospace;
   text-align: center;
 }
@@ -496,6 +497,10 @@ footer {
     width: 20%;
   }
 
+  .info .text-center {
+    font-size: 1.5rem;
+  }
+
   .back-to-top {
     width: 4.5rem;
     height: 4.5rem;
@@ -515,9 +520,9 @@ footer {
     height: 200px;
   }
 
-  .info-team > h3 {
+  .info-team > h2 {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .container-game {
@@ -568,10 +573,6 @@ footer {
     margin-bottom: 0;
   }
 
-  .info .text-center {
-    font-size: 1.5rem;
-  }
-
   .play {
     margin: 0;
   }
@@ -618,7 +619,7 @@ footer {
     height: 200px;
   }
 
-  .info-team > h3 {
+  .info-team > h2 {
     font-weight: 600;
     font-size: 1.2rem;
   }
@@ -713,7 +714,7 @@ footer {
   }
 
   .content-card-team {
-    margin-top: 20px;
+    margin-top: 3.5rem;
     gap: 1rem;
   }
 
@@ -721,9 +722,9 @@ footer {
     height: 200px;
   }
 
-  .info-team > h3 {
+  .info-team > h2 {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .container-game {
@@ -775,7 +776,7 @@ footer {
   }
 
   .info .text-center {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .play {
@@ -816,9 +817,9 @@ footer {
     margin-top: 20px;
   }
 
-  .info-team > h3 {
+  .info-team > h2 {
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.41rem;
   }
 
   .container-game {
@@ -923,6 +924,11 @@ footer {
     margin: 0;
   }
 
+  .content-card-team {
+    gap: 2rem;
+    margin-top: 50px;
+  }
+
   #gameplay .container-text {
     width: 90%;
     display: flex;
@@ -944,6 +950,10 @@ footer {
 @media screen and (1600px <= width <= 1820px) {
   .play {
     margin: 0;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   .container-right {
@@ -968,6 +978,10 @@ footer {
 
   button {
     font-size: 2rem;
+  }
+
+  p {
+    font-size: 20px;
   }
 
   .dropdown-content {
